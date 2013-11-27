@@ -11,7 +11,7 @@
 
 void *print_message_function(void *ptr);
 
-int main() {
+int pthread_test() {
 	pthread_t thread1, thread2;
 	const char *message1 = "Thread 1";
 	const char *message2 = "Thread 2";
@@ -31,7 +31,6 @@ int main() {
 
 	printf("Thread 1 returns: %d\n", iret1);
 	printf("Thread 2 returns: %d\n", iret2);
-	exit(0);
 }
 
 void *print_message_function(void *ptr) {
